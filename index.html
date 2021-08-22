@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Bootstarp CSS file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <!--Custom CSS file-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="container row">
+            <div class="col-lg-6 laptop_img mt-5">
+
+                <img src="./img/mac.png" alt="" class="w-100 mt-5">
+            </div>
+            <div class="col-lg-6 mt-5">
+                <div class="laptop_details">
+                    <h1>Customize your Blue 24-inch <br> iMAC with Apple M1 chip</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine · 8GB unified memory · 256GB SSD storage.</p>
+                </div>
+
+                <div class="configuration">
+                    <!--............... Memory Card ............. -->
+                    <div id="memory" class="memory mt-4">
+                        <h3>Memory </h3>
+                        <button id="8GB_memory" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button id="16GB_memory" type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                    </div>
+
+                    <!--............... Storage ............. --> 
+                    <div class="storage mt-4">
+                        <h3>Storage </h3>
+                        <button id="256GB_storage" type="button" class="btn btn-outline-secondary">256GB SSD storage </button>
+                        <button id="512GB_storage" type="button" class="btn btn-outline-secondary">512GB SSD storage </button>
+                        <button id="1TB_storage" type="button" class="btn btn-outline-secondary">1TB SSD storage </button>
+                    </div>
+
+                    <!--............... Delivery ............. -->
+                    <div class="delivery_option row mt-4">
+                        <h3>Choose your delivery option  </h3>
+                        <div class="col-lg-6">
+                            <button id="free_delivery" type="button" class="btn btn-outline-secondary btn-sm">Friday, Aug-21 free prime delivery</button>
+                        
+                        </div>
+                        <div class="col-lg-6">
+                            <button id="urgent_delivery" type="button" class="btn btn-outline-secondary btn-sm">Friday, Aug-25 delivery charge 20$</button>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="price_calculation_table row mt-5">
+                        <div class="col-lg-8">
+
+                            <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td>Best Price</td>
+                                    <td>$<span id="best_price">1299</span></td>
+                                  </tr>
+                                
+                                <tr>
+                                  <td>Extra memory cost</td>
+                                  <td>$<span id="extra_Memory_Cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra storage cost</td>
+                                    <td>$<span id="extra_Storage_Cost">0</span></td>
+                                  </tr>
+                                
+                                <tr>
+                                  <td>Delivery charge</td>
+                                  <td>$<span id="delivery_Cost">0</span></td>
+                                </tr>
+                                </tbody>
+                                <tr>
+                                    <td>Total price</td>
+                                    <td>$<span id="total_price">1299</span></td>
+                                </tr>
+                                
+                              </table>
+
+                              <div class="promo_code">
+                                <p>Add promo code</p>
+                                <div class="input-group mb-3">
+                                    <input id="promo_code_text" type="text" class="form-control">
+                                    <button id = "promo_code_button" class="btn btn-danger" type="button" >Apply</button>
+                                </div>
+                              </div>
+                              
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+            <h1 class="text-center mb-5">Total : $<span id="grand_final_Price">1299</span></h1>
+        </div>
+    </main>
+
+        
+    
+    
+
+
+     <!--bootstarp js file-->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--custom js file-->
+    <script src="./js/custom.js"></script>
+    
+</body>
+</html>
